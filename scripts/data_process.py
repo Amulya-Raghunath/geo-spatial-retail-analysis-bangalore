@@ -1,0 +1,16 @@
+import pandas as pd
+shops=pd.read_csv("data/osm_shops_bengaluru.csv")
+population=pd.read_csv("data/bengaluru_population.csv")
+malls=pd.read_csv("data/bengaluru_shopping_malls.csv")
+shops=shops.dropna()
+population=population.dropna()
+malls=malls.dropna()
+shops.fillna("Unknown", inplace=True)
+print("Shops :",shops.shape)
+print("Population :",population.shape)
+print("Malls :",malls.shape)
+shops.to_csv("data/osm_shops_bengaluru.csv")
+#Simple Category counts
+shop_count=shops['shop'].value_counts()
+print(shop_count)
+shop_count.to_csv("data/shop_category_distribution.csv")
