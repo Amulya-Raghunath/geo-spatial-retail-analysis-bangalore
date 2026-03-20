@@ -53,10 +53,10 @@ This project analyzes retail store distribution across Bangalore using OpenStree
 
 ## 📈 Dashboard Screenshots
 
-![Map View](screenshots/retail_Density_by_Area.png)  
+![Map View](screenshot/retail_Density_by_Area.png)  
 *Geospatial distribution of retail stores across Bangalore.*
 
-![Mall Cluster](screenshots/mall_Cluster_Map.png)  
+![Mall Cluster](screenshot/mall_Cluster_Map.png)  
 *Retail Shops within the 1 km distance from the Big Mall .*
 
 ---
